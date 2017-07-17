@@ -1,68 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width">
- <title>JS Bin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body onload="myMove()">
- <div>
-   <figure id="test">
-     <img src="http://introcs.cs.princeton.edu/java/stdlib/mandrill200x200.jpg"/>
-     <img src="http://www.otcnet.org/files/otc_rgb_200x200.gif"/>
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Nota_disambigua.svg/200px-Nota_disambigua.svg.png"/>
-   </figure>
- </div>
+<body onload="a()">
+  <div>
+    <figure>
+      <img src="http://internetmatuer.com/wp-content/uploads/2016/01/Quand-la-blague-est-trop-dr%C3%B4le.jpg"/>
+      <img src="http://introcs.cs.princeton.edu/java/stdlib/mandrill200x200.jpg"/>
+      <img src="http://www.otcnet.org/files/otc_rgb_200x200.gif"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Nota_disambigua.svg/200px-Nota_disambigua.svg.png"/>
+    </figure>
+  </div>
+
+<script src="js/main.js">
+
+</script>
 </body>
 </html>
-var pos = 0;
-function myMove() {
-   var elem = document.getElementById("test");
-   setInterval(function() {
-     pos += 100;
-     elem.style.right += pos + "px";
-   }, 3000);
-}
-
-
-
-/*function myMove() {
-  var elem = document.getElementById("test");
-
-  var onLance = setInterval(onSlide,3000);
-
-  function onSlide() {
-    var pos = 0;
-    var id = setInterval(frame, 10);
-  function frame() {
-    if (pos == 100) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.right = pos + '%';
-    }
-   }
-  }
-}*/
-
-
-img {
-  width:100%;
-}
-
-div {
-  border:0.5px solid black;
-  position: relative;
-  width : 100px;
-  height: 100px;
- //overflow : hidden;
-}
-
-figure {
-  position :absolute;
-  margin: 0;
-  border:0.5px solid red;
-  width:100%;
-  height: 100%;
-  display: flex;
-}
