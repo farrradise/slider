@@ -1,5 +1,5 @@
 body {
-  /*background-color: black;*/
+  background-color: black;
 }
 
 img {
@@ -15,6 +15,7 @@ img:first-child {
 }
 
 div {
+  border: 3px solid white;
   display: flex;
   margin: 6% auto;
   position: relative;
@@ -33,6 +34,8 @@ figure {
 
 p {
   margin: 0;
+  font-family: arial;
+  border-top: 2px solid white;
   text-align: center;
   font-size: 30px;
   padding: 15px;
@@ -60,20 +63,16 @@ ul {
   /*border: 1px solid red;*/
 }
 
-li:first-of-type {
-  /*margin-left: auto;*/
-}
-
-li:last-of-type {
-  /*margin-right: 100px;*/
-}
 
 li {
   padding: 0;
   /*border: 1px solid white;*/
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   margin: 0;
   list-style: none;
-  /*color: white;*/
   margin: 5px;
+}
+
+li:hover {
+  color:white;
 }
