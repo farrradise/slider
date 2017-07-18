@@ -45,7 +45,7 @@ p {
   bottom: 0px;
   height: 60px;
   min-width: 600px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 
@@ -77,14 +77,10 @@ li {
 }
 
 li:hover {
-  opacity: 1;
-  color:lightgray;
+  opacity: 1!important;
+  /*color:lightgray;*/
 }
 
 li:first-of-type {
   opacity: 1;
 }
-
-/*attribute[active] {*/
-  /*color:yellow;*/
-/*}*/
